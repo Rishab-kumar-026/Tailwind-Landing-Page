@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Landing Page</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header-container bg-white-300 w-screen h-100vh">
+        <nav class="nav-bar flex items-center justify-between py-4 px-4 bg-blue-500 stickytop-0 z-50 xl:px-20">
+            <div class="logo md: mr-auto">
+                <img src="imgs/logo-bookmark-white.png" alt="">
+            </div>
+            <div class="nav-links hidden md:block text-white font-medium ">
+                <a href="#features" class="mr-5 cursor-pointer lg:text-xl">Features</a>
+                <a href="#extensions" class="mr-5 cursor-pointer lg:text-xl ">Extensions</a>
+                <a href="#contact" class="mr-5 cursor-pointer lg:text-xl">Contact</a>
+                <button
+                    class="bg-orange-500 py-1 px-4 rounded-lg cursor-pointer hover:bg-white hover:text-orange-500 border-2 border-orange-500 transition ease-in delay-150  lg:text-xl">Login</button>
+            </div>
+            <div class="menu-icon">
+                <i class="ri-menu-line text-xl text-white cursor-pointer md:hidden lg:hidden xl:hidden"></i>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section
+            class="home-page w-screen h-[90vh] flex flex-col-reverse gap-4 items-center px-4 py-2 lg:flex-row  xl:px-20 gap-10">
+            <div
+                class="home-page-info  w-[100%] h-[50%] p-2 mb-2 sm:w-[100%] content-center md:w-[100%] lg:w-[50vw] h-[75vh] content-center  xl:w-[50vw] xl:h-[60vh]">
+                <h1
+                    class="text-[24px] font-medium mb-4 text-center sm:text-[28px]  lg:text-[34px] lg:text-left xl:text-[40px]">
+                    A Simple <span class="text-blue-500">Bookmark </span>Manager</h1>
+                <p
+                    class="text-center font-lighter opacity-[0.7] mb-6 text-[18px] leading-[1.5] tracking-wider sm:text-[22px] lg:text-[20px] lg:text-left leading-1 tracking-tighter ">
+                    A clean and simple interface to organize your favourite websites. Open a new browser tab and see
+                    your
+                    sites load instantly. Try it for free.</p>
+                <div class="btn-container p-2 flex items-center w-[100%] justify-center gap-6 lg:justify-start">
+                    <button
+                        class="bg-blue-500 text-white text-[16px]  font-semibold  hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer p-2 rounded-lg sm:text-[1.3rem] ">Get
+                        it on Chrome</button>
+                    <button
+                        class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer p-2 rounded-lg sm:text-[1.3rem]">Get
+                        it on FireFox</button>
+                </div>
+            </div>
+
+            <div class="home-page-img">
+                <img class=" w-[90vw] h-[35vh] sm:w-[100vw] sm:h-[40vh] md:w-[100vw] md:h-[45vh] pt-4 lg:w-[50vw] lg:h-[75vh] object-contain xl:w-[50vw] xl:h-[60vh] "
+                    src="imgs/undraw_writer_q06d.svg" alt="">
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Section -->
+
+    <!-- Features Secction Page -->
+    <section id="features" class="features-page border-blue-500 p-4 w-[100vw] h-[100vh] xl:px-20 gap-10 mb-10">
+        <div class="features-info px-2 md:mb-18">
+            <h1 class="text-[24px] font-medium mb-3 text-center text-blue-600 sm:text-[28px] xl:text-[38px]">Features
+            </h1>
+            <p
+                class="text-center font-lighter opacity-[0.7] mb-6 text-[18px] leading-2 tracking-tight sm:text-[22px]  md:text-[18px] md:w-[50vw] text-center mx-auto">
+                Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+                between your devices so you can access them on the go.</p>
+        </div>
+
+        <div class="features-more-info md:flex justify-between gap-4">
+            <img class="w-[90vw] h-[35vh] mx-auto my-4 sm:w-[100vw] sm:h-[40vh] md:w-[50vw] md:h-[60vh] "
+                src="imgs/undraw_reading_time_re_phf7.svg" alt="">
+            <div class="more-info content-center">
+                <h1
+                    class="text-[24px] font-medium mb-4 text-center text-blue-600 sm:text-[28px] md:text-left xl:text-[38px]">
+                    Bookmark in one click
+                </h1>
+                <p
+                    class="text-center font-lighter opacity-[0.7] mb-6 text-[18px] leading-2 tracking-normal sm:text-[22px] md:text-left md:text-[18px] xl:w-[40vw]">
+                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                    control over how you manage your favourite sites.</p>
+                <div class="btn-container flex items-center justify-center md:justify-start">
+                    <button
+                        class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem]">More
+                        info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intelligent Search Section -->
+
+    <section
+        class="intelligent-search w-[100vw] h-auto lg:flex flex-row-reverse justify-between gap:6 xl:px-20 gap-10 mb-10">
+
+        <div class="search-img">
+            <img class="w-[90vw] h-[35vh] mx-auto my-4 sm:w-[100vw] sm:h-[40vh] md:w-[50vw] md:h-[60vh] "
+                src="imgs/undraw_people_search_re_5rre.svg" alt="">
+        </div>
+
+        <div class="search-info p-4 content-center">
+            <h1
+                class="text-[24px] font-medium mb-3 text-center text-blue-600 sm:text-[28px] lg:text-left xl:text-[38px]">
+                Intelligent
+                Search</h1>
+            <p
+                class="text-center w-[90vw]  mx-auto opacity-[0.7] mb-6 text-[18px] leading-2 tracking-normal sm:text-[22px] md:mx-auto w-[70vw] md:text-[18px] lg:text-left lg:w-[50vw] xl:w-[40vw]">
+                Our powerful search feature will help you find saved sites in no time at all. No need to crawl through
+                all of your bookmarks.</p>
+            <div class="btn-container flex items-center justify-center lg:justify-start">
+                <button
+                    class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem]">More
+                    info</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sharing BookMark Section -->
+
+    <section id="extensions" class="share-bookmarks w-[100vw] h-auto xl:px-20 gap-10 mb-10">
+        <div class="features-more-info md:flex justify-between gap-4">
+            <img class="w-[90vw] h-[35vh] mx-auto my-4 sm:w-[100vw] sm:h-[40vh] md:w-[50vw] md:h-[60vh] "
+                src="imgs/undraw_sharing_knowledge_03vp.svg" alt="">
+            <div class="more-info content-center">
+                <h1
+                    class="text-[24px] font-medium mb-4 text-center text-blue-600 sm:text-[28px] md:text-left xl:text-[38px]">
+                    Share your Bookmarks
+                </h1>
+                <p
+                    class="text-center font-lighter opacity-[0.7] mb-6 text-[18px] leading-2 tracking-normal sm:text-[22px] md:text-left md:text-[18px] xl:w-[40vw]">
+                    Easily share your bookmarks and collections with others. Create a shareable link that you can send
+                    at the click of a button.</p>
+                <div class="btn-container flex items-center justify-center md:justify-start">
+                    <button
+                        class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem]">More
+                        info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Download Extension Section -->
+    <section class="download-extension w-[100vw] h-auto xl:px-20 gap-10 mb-10">
+        <div class="features-info px-2 md:mb-18">
+            <h1 class="text-[24px] font-medium mb-3 text-center text-blue-600 sm:text-[28px] xl:text-[38px]">Download
+                Extensions
+            </h1>
+            <p
+                class="text-center font-lighter opacity-[0.7] mb-6 text-[18px] leading-2 tracking-tight sm:text-[22px]  md:text-[18px] md:w-[50vw] text-center mx-auto xl:w-[40vw]">
+                We've got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us
+                to prioritize.</p>
+        </div>
+        <div class="extensions grid grid-cols-1 gap-8 md:grid-cols-2 gap-4 lg:grid-cols-3 gap-2">
+            <div
+                class="extension py-2 w-[80vw] h-[70vw] shadow-md flex flex-col items-center justify-center gap-2 mx-auto md:w-[40vw] md:h-[40vw] md:justify-start py-2 lg:w-[30vw] lg:h-[30vw] xl:justify-center">
+                <img class="mb-4" src="imgs/logo-chrome.svg" alt="">
+                <h3 class="font-medium sm:text-[20px]">Add to Chrome</h3>
+                <p class="opacity-[0.7] mb-4 sm:text-[18px]">Minimum version 62</p>
+                <button
+                    class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem] w-[70vw] md:w-[30vw] md:text-[16px] lg:w-[25vw]">Add
+                    & Install Extension </button>
+            </div>
+            <div
+                class="extension py-2 w-[80vw] h-[70vw] shadow-md flex flex-col items-center justify-center gap-2 mx-auto md:w-[40vw] md:h-[40vw] md:justify-start py-2 lg:w-[30vw] lg:h-[30vw] xl:justify-center">
+                <img class="mb-4" src="imgs/logo-firefox.svg" alt="">
+                <h3 class="font-medium sm:text-[20px]">Add to FireFox</h3>
+                <p class="opacity-[0.7] mb-4 sm:text-[18px]">Minimum version 62</p>
+                <button
+                    class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem] w-[70vw] md:w-[30vw] md:text-[16px] lg:w-[25vw]">Add
+                    & Install Extension </button>
+            </div>
+            <div
+                class="extension py-2 w-[80vw] h-[70vw] shadow-md flex flex-col items-center justify-center gap-2 mx-auto md:w-[40vw] md:h-[40vw] md:justify-start py-2 lg:w-[30vw] lg:h-[30vw] xl:justify-center">
+                <img class="mb-4" src="imgs/logo-opera.svg" alt="">
+                <h3 class="font-medium sm:text-[20px]">Add to Opera</h3>
+                <p class="opacity-[0.7] mb-4 sm:text-[18px]">Minimum version 62</p>
+                <button
+                    class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem] w-[70vw] md:w-[30vw] md:text-[16px] lg:w-[25vw]">Add
+                    & Install Extension </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+
+    <section class="faq-section p-4 sm:px-16 md:px-20 lg:px-28 xl:px-20 gap-10 mb-10">
+        <div class="features-info px-2 md:mb-18">
+            <h1 class="text-[24px] font-medium mb-3 text-center text-blue-600 sm:text-[28px] xl:text-[38px]">Frequently Asked Questions
+            </h1>
+            <p
+                class="text-center font-lighter opacity-[0.7] mb-6 text-[18px] leading-2 tracking-tight sm:text-[22px]  md:text-[18px] md:w-[50vw] text-center mx-auto xl:w-[40vw]">
+                Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us..</p>
+        </div>
+
+        <div class="questions">
+            <div class="querry flex items-center justify-between py-2 px-4 shadow-md mb-4 lg:w-[50vw] lg:mx-auto">
+                <h2 class="font-lighter">What is a Bookmark ?</h2>
+                <i class="ri-arrow-down-s-line text-[20px] text-blue-500"></i>
+            </div>
+            <div class="querry flex items-center justify-between py-2 px-4 shadow-md mb-4 lg:w-[50vw] lg:mx-auto">
+                <h2 class="font-lighter">How can I request a new browser ?</h2>
+                <i class="ri-arrow-down-s-line text-[20px] text-blue-500"></i>
+            </div>
+            <div class="querry flex items-center justify-between py-2 px-4 shadow-md mb-4 lg:w-[50vw] lg:mx-auto">
+                <h2 class="font-lighter">Is there a mobile app ?</h2>
+                <i class="ri-arrow-down-s-line text-[20px] text-blue-500"></i>
+            </div>
+            <div class="querry flex items-center justify-between py-2 px-4 shadow-md mb-8 lg:w-[50vw] lg:mx-auto">
+                <h2 class="font-lighter">What about other Chromium Browsers ?</h2>
+                <i class="ri-arrow-down-s-line text-[20px] text-blue-500"></i>
+            </div>
+            <div class="btn-container flex items-center justify-center md:justify-center">
+                <button
+                    class="bg-blue-500 text-white text-[16px] font-semibold hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition ease-in delay-150 cursor-pointer px-6 py-2 mb-2  rounded-lg sm:text-[1.3rem]">More
+                    info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Up-to-date Section -->
+
+    <section class="up-to-date h-[50vh] bg-blue-500 flex flex-col items-center justify-start gap-6 py-10 px-4 sm:h-[40vh] xl:h-[35vh]">
+        <p class="text-white text-[18px]">35,000+ ALRREADY JOINED</p>
+        <h1 class="text-white text-[28px] text-center">Stay up-to-date with what we’re doing</h1>
+        <div class="input-field flex flex-col gap-4 sm:flex-row">
+            <input class="w-[90vw] p-2 rounded-lg sm:w-[40vw] xl:w-[30vw]"  type="text" placeholder="Enter your email address">
+            <button class="bg-orange-600 text-white font-medium rounded-lg p-2 text-[18px] cursor-pointer hover:bg-white hover:text-orange-600 border-2 border-orange-600 transition ease-in delay-150 sm:px-4">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer id="contact" class="footer w-[100vw] h-[25vh] bg-blue-950 p-4 sm:grid grid-cols-2 items-center md:grid-cols-3 md:h-[10vh] md:items-center md:px-2 ">
+        <div class="logo mb-6 cursor-pointer">
+            <img  class="mx-auto"  src="imgs/logo-bookmark-white.png" alt="">
+        </div>
+        <div class="links flex items-center justify-between px-6 mb-6 md:w-[40vw]">
+            <a href="#features" class="cursor-pointer text-white cursor-pointer lg:text-xl">Features</a>
+            <a href="#extensions" class="cursor-pointer text-white cursor-pointer lg:text-xl ">Extensions</a>
+            <a href="#contact" class="cursor-pointer text-white cursor-pointer lg:text-xl">Contact</a>
+        </div>
+        <div class="social-media w-[90vw] flex items-center gap-12 justify-center md:w-[30vw] mb-4 md:mx-8">
+            <i class="ri-twitter-fill text-white text-[28px] cursor-pointer  sm:text-[32px] md:text-[28px]"></i>
+            <i class="ri-facebook-box-fill text-white text-[28px] cursor-pointer sm:text-[32px] md:text-[28px]"></i>
+        </div>
+    </footer>
+
+
+    <!-- border-2 border-blue-500 -->
+
+</body>
+
+</html>
